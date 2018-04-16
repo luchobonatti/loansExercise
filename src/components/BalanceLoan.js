@@ -45,7 +45,6 @@ class NewPayModal extends Component {
                     + (12 * (date2.getFullYear() - date1.getFullYear()));
             };
             const monthly_payment = this.state.paymentMonthly;
-            const interest_rate = this.props.loan.rate;
             const term_remaining = getDiff();
 
 

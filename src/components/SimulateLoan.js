@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {DatePicker, Dialog, FlatButton, TextField} from "material-ui";
+import {Dialog, FlatButton, TextField} from "material-ui";
 
 class NewPayModal extends Component {
     constructor(props) {

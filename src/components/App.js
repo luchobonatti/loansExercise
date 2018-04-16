@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 
 import LoginPage from './Login';
 import HomePage from './Home';
-import ProfilePage from './Profile';
+// import ProfilePage from './Profile';
 
 import * as routes from '../constants/routes';
 import Redirect from "react-router-dom/es/Redirect";
@@ -36,14 +36,6 @@ class App extends Component {
                         <Redirect to={routes.LOGIN.path}/>
                     ) : (
                         <HomePage/>
-                    )
-                )}/>
-
-                <Route exact path={routes.PROFILE.path} render={() => (
-                    !this.state.logged ? (
-                        <Redirect to={routes.LOGIN.path}/>
-                    ) : (
-                        <ProfilePage/>
                     )
                 )}/>
 
